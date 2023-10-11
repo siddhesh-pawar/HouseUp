@@ -1,2 +1,2 @@
 # HouseUp
-Helping PSU students find off-campus accomodation
+This project will help PSU students find off-campus accomodation
