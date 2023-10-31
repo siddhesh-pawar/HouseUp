@@ -1,0 +1,27 @@
+/* User registration */
+
+.user_registration {
+    width: 100%;
+    padding: 10px;
+    background-color: #cbf7d8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.user_registration h2{
+    text-align: center;
+    font-weight: bold;
+}
+
+.user_registration
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-left: 10px;
+}
