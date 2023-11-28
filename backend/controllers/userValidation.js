@@ -3,15 +3,12 @@ const checkUserDetails = require('../validation/registrationDetails');
 const userValidation = (req) => {
 
     const errorMsgs = [];
-    const { name, phone, email, password, repassword } = req.body;
+    const { name,  email, password, repassword } = req.body;
 
     if (!checkUserDetails.isNull(name)) {
         errorMsgs.push('Name is required');
     }
 
-    if (!checkUserDetails.isNull(phone)) {
-        errorMsgs.push('Phone number is required');
-    }
 
     if (!checkUserDetails.isNull(email)) {
         errorMsgs.push('Email is required');
@@ -23,9 +20,6 @@ const userValidation = (req) => {
         errorMsgs.push('Re-Password is required');
     }
 
-    if(checkUserDetails.isValidPhone(phone)){
-        errorMsgs.push('Invalid phone number');
-    }
 
     if (!checkUserDetails.isValidEmail(email)) {
         errorMsgs.push('Invalid email');
