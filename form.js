@@ -2,14 +2,14 @@ function validateForm() {
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
-    var confirmPassword = document.getElementById("confirmPassword").value;
+    var repassword = document.getElementById("repassword").value;
 
-    if (name === "" || email === "" || password === "" || confirmPassword === "") {
+    if (name === "" || email === "" || password === "" || repassword === "") {
         alert("All fields are required");
         return false;
     }
 
-    if (password !== confirmPassword) {
+    if (password !== repassword) {
         alert("Passwords do not match");
         return false;
     }
